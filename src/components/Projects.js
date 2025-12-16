@@ -5,18 +5,21 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ExternalLink, Github, Layers } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 import TextRevealer from "./ui/TextRevealer";
+
 
 gsap.registerPlugin(ScrollTrigger);
 
 const projects = {
     react: [
         {
-            title: "E-Commerce Dashboard",
-            desc: "A full-featured analytics dashboard for online stores.",
+            title: "Child Protection System",
+            desc: "Child protection is the practice of safeguarding children from abuse, neglect, exploitation, and any form of harm.",
             tech: ["Next.js", "Tailwind", "Recharts"],
-            link: "#",
-            github: "#",
+            link: "https://child-protection-lac.vercel.app/",
+            github: "https://github.com/students44/ChildProtection",
+            image: "/project_images/childprotection.PNG",
             color: "from-blue-500 to-cyan-500"
         },
         {
@@ -125,7 +128,18 @@ export default function Projects() {
                             key={index}
                             className="project-card group relative bg-white/5 border border-white/10 overflow-hidden rounded-2xl hover:border-white/30 transition-all duration-300 hover:-translate-y-2"
                         >
-                            <div className={cn("h-48 bg-gradient-to-br opacity-80 group-hover:opacity-100 transition-opacity", project.color)} />
+                            <div className="h-48 relative overflow-hidden">
+                                {project.image ? (
+                                    <Image
+                                        src={project.image}
+                                        alt={project.title}
+                                        fill
+                                        className="object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300 group-hover:scale-102"
+                                    />
+                                ) : (
+                                    <div className={cn("w-full h-full bg-gradient-to-br opacity-80 group-hover:opacity-100 transition-opacity", project.color)} />
+                                )}
+                            </div>
 
                             <div className="p-6 relative">
                                 <div className="absolute -top-10 right-6 w-12 h-12 bg-slate-900 rounded-xl flex items-center justify-center border border-white/10 shadow-xl group-hover:scale-110 transition-transform">
