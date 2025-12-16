@@ -59,16 +59,30 @@ export default function Projects() {
 
     useEffect(() => {
         const ctx = gsap.context(() => {
-            gsap.from(".project-card", {
-                scrollTrigger: {
-                    trigger: containerRef.current,
-                    start: "top 80%",
-                },
-                y: 60,
-                opacity: 0,
-                stagger: 0.15,
-                duration: 0.8,
-                ease: "power3.out"
+            const cards = gsap.utils.toArray(".project-card");
+
+            cards.forEach((card, i) => {
+                gsap.fromTo(card,
+                    {
+                        y: 50,
+                        opacity: 0,
+                        scale: 0.95
+                    },
+                    {
+                        scrollTrigger: {
+                            trigger: card,
+                            start: "top 90%", // Trigger when top of card hits bottom 10% of viewport
+                            toggleActions: "play none none reverse",
+                        },
+                        y: 0,
+                        opacity: 1,
+                        scale: 1,
+                        stagger: 0.1,
+                        duration: 0.6,
+                        delay: i * 0.1, // delay based on index for cascade effect
+                        ease: "power3.out"
+                    }
+                );
             });
         }, containerRef);
         return () => ctx.revert();

@@ -101,9 +101,9 @@ export default function Skills() {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {skillsData.map((category, idx) => (
+                    {skillsData.map((category, items) => (
                         <div
-                            key={idx}
+                            key={items}
                             className="skill-card group relative p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 hover:border-accent-primary/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-accent-primary/10"
                         >
                             <div className="absolute inset-0 bg-gradient-to-br from-accent-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl" />
