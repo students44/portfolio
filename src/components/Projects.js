@@ -104,7 +104,7 @@ export default function Projects() {
                         <button
                             onClick={() => setActiveTab("react")}
                             className={cn(
-                                "px-6 py-2 rounded-lg text-sm font-medium transition-all duration-300",
+                                "px-6 py-2 rounded-lg text-sm font-medium transition-all duration-300 cursor-pointer",
                                 activeTab === "react" ? "bg-accent-primary text-slate-900 shadow-lg" : "text-gray-400 hover:text-white"
                             )}
                         >
@@ -113,7 +113,7 @@ export default function Projects() {
                         <button
                             onClick={() => setActiveTab("wordpress")}
                             className={cn(
-                                "px-6 py-2 rounded-lg text-sm font-medium transition-all duration-300",
+                                "px-6 py-2 rounded-lg text-sm font-medium transition-all duration-300 cursor-pointer",
                                 activeTab === "wordpress" ? "bg-accent-primary text-slate-900 shadow-lg" : "text-gray-400 hover:text-white"
                             )}
                         >

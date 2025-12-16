@@ -31,7 +31,6 @@ export default function Hero() {
             )
                 .from(".hero-btn", {
                     scale: 0.8,
-                    opacity: 0,
                     stagger: 0.1,
                     duration: 0.5,
                 }, "-=0.2"); // Adjusted overlap
