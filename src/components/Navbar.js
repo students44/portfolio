@@ -32,8 +32,8 @@ export default function Navbar() {
             )}
         >
             <div className="container mx-auto px-6 flex justify-between items-center">
-                <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-[var(--accent-primary)] to-[var(--accent-secondary)] bg-clip-text text-transparent">
-                    Portfolio
+                <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-[var(--accent-primary)] to-[var(--accent-secondary)] bg-clip-text ">
+                    Muneeb Khan
                 </Link>
 
                 {/* Desktop Menu */}
@@ -48,10 +48,10 @@ export default function Navbar() {
                         </Link>
                     ))}
                     <div className="flex items-center space-x-4 ml-6 border-l border-white/20 pl-6">
-                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
+                        <a href="https://github.com/students44" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
                             <Github size={20} />
                         </a>
-                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
+                        <a href="https://www.linkedin.com/in/muneeb-khan-95a860263/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
                             <Linkedin size={20} />
                         </a>
                     </div>

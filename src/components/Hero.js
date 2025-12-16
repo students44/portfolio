@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ArrowDown } from "lucide-react";
+import Image from "next/image";
 
 export default function Hero() {
     const componentRef = useRef(null);
@@ -13,12 +14,20 @@ export default function Hero() {
         const ctx = gsap.context(() => {
             const tl = gsap.timeline();
 
-            tl.from(textRef.current, {
-                y: 100,
-                opacity: 0,
-                duration: 1,
-                ease: "power4.out",
-            })
+            tl.fromTo(textRef.current,
+                {
+                    y: 50,
+                    opacity: 0,
+                    scale: 0.5
+                },
+                {
+                    y: 0,
+                    opacity: 1,
+                    scale: 1,
+                    duration: 1.2,
+                    ease: "back.out(1.7)",
+                }
+            )
                 .from(subTextRef.current, {
                     y: 50,
                     opacity: 0,
@@ -45,15 +54,20 @@ export default function Hero() {
         >
             <div className="text-center max-w-4xl z-10">
                 <h2 className="text-accent-primary font-mono mb-4 text-xl md:text-2xl">
-                    Hi, I'm <span className="text-white">Your Name</span>
+                    Hi, I'm <span className="text-white">Muneeb khan</span>
                 </h2>
 
-                <h1
-                    ref={textRef}
-                    className="text-5xl md:text-7xl font-bold mb-6 tracking-tight bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent"
-                >
-                    Building Digital Experiences <br /> That Matter.
-                </h1>
+                <div ref={textRef} className="mb-6 flex justify-center">
+                    <Image
+                        src="/heroimage.png"
+                        alt="Hero Image"
+                        width={190}
+                        height={190}
+                        className="object-cover" // maintain aspect ratio
+                        priority
+                        style={{ borderRadius: "50%" }}
+                    />
+                </div>
 
                 <p
                     ref={subTextRef}

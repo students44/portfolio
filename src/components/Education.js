@@ -3,31 +3,38 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { GraduationCap, BookOpen, Award } from "lucide-react";
+import { GraduationCap, BookOpen, Award, Briefcase } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const educationData = [
     {
-        year: "2023 - Present",
-        title: "Master in Visual Computing",
-        institution: "Tech University",
-        description: "Focusing on Computer Graphics, AI, and Human-Computer Interaction.",
+        year: "25 November, 2024 - Present",
+        title: "Frontend Developer",
+        institution: "WEBTECH Fusion Company Islamabad",
+        description: "Currently working as a Frontend Developer, contributing to modern web development projects.",
+        icon: Briefcase,
+    },
+    {
+        year: "1 August, 2024 - 30 November, 2024",
+        title: "Frontend Developer Intern",
+        institution: "KPITB",
+        description: "Worked in front-end technology to gain experience from seniors and improve code structure.",
+        icon: Briefcase,
+    },
+    {
+        year: "2020 - 2024",
+        title: "Bachelor's Degree",
+        institution: "Agriculture University Peshawar",
+        description: "Acquired extensive knowledge and skills across various disciplines, establishing a solid foundation for academic and professional growth.",
         icon: GraduationCap,
     },
     {
-        year: "2019 - 2023",
-        title: "Bachelor of Computer Science",
-        institution: "State University",
-        description: "Graduated with Honors. Specialized in Software Engineering.",
+        year: "2016 - 2018",
+        title: "FSC",
+        institution: "Government Degree College Dagger Buner",
+        description: "Gained valuable knowledge and skills in various subjects and developed a strong foundation for future academic pursuits.",
         icon: BookOpen,
-    },
-    {
-        year: "2022",
-        title: "Full Stack Web Development Certification",
-        institution: "FreeCodeCamp",
-        description: "Intensive bootcamp covering MERN stack and modern web practices.",
-        icon: Award,
     }
 ];
 
@@ -36,18 +43,24 @@ export default function Education() {
 
     useEffect(() => {
         const ctx = gsap.context(() => {
-            gsap.from(".edu-item", {
-                scrollTrigger: {
-                    trigger: containerRef.current,
-                    start: "top 70%",
-                    end: "bottom bottom",
-                    toggleActions: "play none none reverse",
-                },
-                y: 50,
-                opacity: 0,
-                stagger: 0.2,
-                duration: 1,
-                ease: "power2.out",
+            const items = gsap.utils.toArray(".edu-item");
+
+            items.forEach((item, i) => {
+                gsap.fromTo(item,
+                    { opacity: 0, y: 50 },
+                    {
+                        opacity: 1,
+                        y: 0,
+                        duration: 1,
+                        ease: "power2.out",
+                        delay: i * 0.1,
+                        scrollTrigger: {
+                            trigger: item,
+                            start: "top 95%",
+                            toggleActions: "play none none reverse",
+                        }
+                    }
+                );
             });
         }, containerRef);
 
