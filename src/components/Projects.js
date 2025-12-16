@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ExternalLink, Github, Layers } from "lucide-react";
 import { cn } from "@/lib/utils";
+import TextRevealer from "./ui/TextRevealer";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -92,7 +93,9 @@ export default function Projects() {
         <section id="projects" className="min-h-screen py-20 relative" ref={containerRef}>
             <div className="container mx-auto px-6">
                 <div className="mb-16 text-center">
-                    <h3 className="text-4xl font-bold text-white mb-6">Featured Projects</h3>
+                    <h3 className="text-4xl font-bold text-white mb-6 flex justify-center">
+                        <TextRevealer>Featured Projects</TextRevealer>
+                    </h3>
 
                     <div className="inline-flex p-1 bg-white/5 rounded-xl border border-white/10 backdrop-blur-sm">
                         <button

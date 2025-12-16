@@ -11,6 +11,7 @@ import {
     SiJquery, SiNextdotjs, SiMaterialdesign, SiRedux, SiTailwindcss, SiFramer, SiGreensock, SiCpanel
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
+import TextRevealer from "./ui/TextRevealer";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -57,18 +58,6 @@ export default function Skills() {
 
     useEffect(() => {
         const ctx = gsap.context(() => {
-            // Header Animation
-            gsap.from(".skills-header", {
-                scrollTrigger: {
-                    trigger: containerRef.current,
-                    start: "top 80%",
-                },
-                y: 50,
-                opacity: 0,
-                duration: 1,
-                ease: "power3.out",
-            });
-
             // Cards Animation
             gsap.utils.toArray(".skill-card").forEach((card, i) => {
                 gsap.from(card, {
@@ -92,12 +81,14 @@ export default function Skills() {
         <section id="skills" className="py-20 relative" ref={containerRef}>
             <div className="container mx-auto px-6">
                 <div className="skills-header text-center mb-16">
-                    <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-accent-primary to-accent-secondary bg-clip-text text-transparent">
-                        Technical Expertise
+                    <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-accent-primary to-accent-secondary bg-clip-text text-transparent flex justify-center">
+                        <TextRevealer>Technical Expertise</TextRevealer>
                     </h2>
-                    <p className="text-gray-400 max-w-2xl mx-auto text-lg">
-                        A comprehensive toolkit of modern technologies and best practices essential for building high-performance digital solutions.
-                    </p>
+                    <div className="text-gray-400 max-w-2xl mx-auto text-lg flex justify-center">
+                        <TextRevealer className="flex flex-wrap gap-1 justify-center">
+                            A comprehensive toolkit of modern technologies and best practices essential for building high-performance digital solutions.
+                        </TextRevealer>
+                    </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
