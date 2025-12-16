@@ -62,8 +62,8 @@ export default function Hero() {
                         src="/heroimage.png"
                         alt="Hero Image"
                         width={190}
-                        height={190}
-                        className="object-cover" // maintain aspect ratio
+                        height={100}
+                        className="object-cover transition-transform duration-500 ease-in-out hover:scale-110 hover:rotate-3 cursor-pointer" // maintain aspect ratio
                         priority
                         style={{ borderRadius: "50%" }}
                     />

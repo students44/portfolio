@@ -57,7 +57,7 @@ export default function Contact() {
                                         type="text"
                                         id="name"
                                         className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent-primary focus:ring-1 focus:ring-accent-primary transition-all"
-                                        placeholder="John Doe"
+                                        placeholder="Enter Your Name"
                                     />
                                 </div>
                                 <div className="space-y-2">
@@ -66,7 +66,7 @@ export default function Contact() {
                                         type="email"
                                         id="email"
                                         className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent-primary focus:ring-1 focus:ring-accent-primary transition-all"
-                                        placeholder="john@example.com"
+                                        placeholder="Enter Your Email"
                                     />
                                 </div>
                             </div>
@@ -93,8 +93,8 @@ export default function Contact() {
                     <p className="text-gray-500 text-sm">© {new Date().getFullYear()} Your Name. All rights reserved.</p>
 
                     <div className="flex items-center gap-6">
-                        <a href="#" className="text-gray-400 hover:text-white transition-colors"><Github size={20} /></a>
-                        <a href="#" className="text-gray-400 hover:text-white transition-colors"><Linkedin size={20} /></a>
+                        <a href="https://github.com/students44" className="text-gray-400 hover:text-white transition-colors"><Github size={20} /></a>
+                        <a href="https://www.linkedin.com/in/muneeb-khan-95a860263/" className="text-gray-400 hover:text-white transition-colors"><Linkedin size={20} /></a>
                         <a href="#" className="text-gray-400 hover:text-white transition-colors"><Twitter size={20} /></a>
                     </div>
 
