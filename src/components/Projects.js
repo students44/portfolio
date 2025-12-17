@@ -23,19 +23,21 @@ const projects = {
             color: "from-blue-500 to-cyan-500"
         },
         {
-            title: "Social Media App",
-            desc: "Real-time chat and feed functionality.",
-            tech: ["React", "Firebase", "Redux"],
-            link: "#",
-            github: "#",
+            title: "The Workout system",
+            desc: "The Workout is your go-to platform for effective training routines, strength building, and total body fitness.",
+            tech: ["React", "NextJs", "Redux", "Tailwind"],
+            link: "https://the-workout-production.up.railway.app/",
+            github: "https://github.com/students44/The-workout",
+            image: "/project_images/heroimage.PNG",
             color: "from-purple-500 to-pink-500"
         },
         {
-            title: "Task Management",
-            desc: "Kanban board with drag and drop support.",
-            tech: ["React", "dnd-kit", "Node.js"],
-            link: "#",
-            github: "#",
+            title: "Excel dashboard",
+            desc: "An interactive Excel dashboard presenting Union-wise summaries, Club-level details, and overall Union performance in a clear and structured view",
+            tech: ["React", "Tailwind", "Typescript", "Motion one"],
+            link: "https://excel-dashboard-ten.vercel.app/",
+            github: "https://github.com/students44/ExcelDashboard",
+            image: "/project_images/excel.PNG",
             color: "from-green-400 to-emerald-600"
         }
     ],
