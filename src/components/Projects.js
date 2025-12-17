@@ -52,17 +52,19 @@ const projects = {
     ],
     wordpress: [
         {
-            title: "Corporate Agency",
-            desc: "Custom theme development for a financial firm.",
-            tech: ["WordPress", "PHP", "SCSS"],
-            link: "#",
+            title: "WebTech Fusion",
+            desc: "WebTech Fusion is a sofware development company provide web development services",
+            tech: ["WordPress", "PHP", "Elementor", "CSS", "JS"],
+            link: "https://webtechfusion.pk/",
+            image: "/project_images/webtech.PNG",
             color: "from-orange-400 to-red-500"
         },
         {
-            title: "Creative Portfolio",
-            desc: "High-performance portfolio for a photographer.",
-            tech: ["WordPress", "GSAP", "Barba.js"],
-            link: "#",
+            title: "KhanBazar",
+            desc: "KhanBazar is an online marketplace for buying and selling second-hand products.",
+            tech: ["WordPress", "Elementor", "CSS", "JS", "PHP"],
+            link: "https://khanbazar.mmmt.app/",
+            image: "/project_images/khanbazar.PNG",
             color: "from-indigo-400 to-blue-600"
         }
     ]
