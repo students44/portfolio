@@ -25,7 +25,7 @@ const projects = {
         {
             title: "The Workout system",
             desc: "The Workout is your go-to platform for effective training routines, strength building, and total body fitness.",
-            tech: ["React", "NextJs", "Redux", "Tailwind"],
+            tech: ["React", "NextJs", "Redux", "Tailwind", "MongoDB"],
             link: "https://the-workout-production.up.railway.app/",
             github: "https://github.com/students44/The-workout",
             image: "/project_images/heroimage.PNG",
@@ -38,6 +38,15 @@ const projects = {
             link: "https://excel-dashboard-ten.vercel.app/",
             github: "https://github.com/students44/ExcelDashboard",
             image: "/project_images/excel.PNG",
+            color: "from-green-400 to-emerald-600"
+        },
+        {
+            title: "Spotify Clone",
+            desc: "An interactive spotify clone you can use to listen to music",
+            tech: ["Html", "Css", "JavaScript", "Bootstrap", "Spotify API"],
+            link: "https://spotify-clone-two-kappa-58.vercel.app/",
+            github: "https://github.com/students44/Spotify-Clone",
+            image: "/project_images/spotify.PNG",
             color: "from-green-400 to-emerald-600"
         }
     ],
