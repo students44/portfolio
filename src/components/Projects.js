@@ -48,6 +48,15 @@ const projects = {
             github: "https://github.com/students44/Spotify-Clone",
             image: "/project_images/spotify.PNG",
             color: "from-green-400 to-emerald-600"
+        },
+        {
+            title: "Alhodhod",
+            desc: "this is islamic site you can read hadis and quran, also you can listen to quran",
+            tech: ["Html", "Css", "JavaScript", "Bootstrap",],
+            link: "https://alhodhod.mmmt.app/",
+            // github: "https://github.com/students44/Spotify-Clone",
+            image: "/project_images/alhodhod.PNG",
+            color: "from-green-400 to-emerald-600"
         }
     ],
     wordpress: [
