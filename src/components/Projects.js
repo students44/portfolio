@@ -37,7 +37,7 @@ const projects = {
             tech: ["React", "Tailwind", "Typescript", "Motion one"],
             link: "https://excel-dashboard-ten.vercel.app/",
             github: "https://github.com/students44/ExcelDashboard",
-            image: "/project_images/excel.PNG",
+            image: "/project_images/excel.png",
             color: "from-green-400 to-emerald-600"
         },
         {
