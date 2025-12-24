@@ -37,7 +37,7 @@ const projects = {
             tech: ["React", "Tailwind", "Typescript", "Motion one"],
             link: "https://excel-dashboard-ten.vercel.app/",
             github: "https://github.com/students44/ExcelDashboard",
-            image: "/project_images/excel.png",
+            image: "/project_images/excel.PNG",
             color: "from-green-400 to-emerald-600"
         },
         {
@@ -65,6 +65,14 @@ const projects = {
             tech: ["WordPress", "Elementor", "CSS", "JS", "PHP"],
             link: "https://khanbazar.mmmt.app/",
             image: "/project_images/khanbazar.PNG",
+            color: "from-indigo-400 to-blue-600"
+        },
+        {
+            title: "Blogging Site",
+            desc: "A personal blogging site built on WordPress to share articles and insights on various topics.",
+            tech: ["WordPress", "Elementor", "CSS", "JS", "PHP"],
+            link: "https://blog.mmmt.app/",
+            image: "/project_images/Blog.PNG",
             color: "from-indigo-400 to-blue-600"
         }
     ]
