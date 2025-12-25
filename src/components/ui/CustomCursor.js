@@ -94,6 +94,19 @@ const CustomCursor = () => {
         }
     }, [isHovering]);
 
+    // Pulse Glow Animation
+    useEffect(() => {
+        const follower = followerRef.current;
+
+        gsap.to(follower, {
+            boxShadow: "0 0 25px 5px rgba(56, 189, 248, 0.8)",
+            duration: 1.5,
+            repeat: -1,
+            yoyo: true,
+            ease: "sine.inOut"
+        });
+    }, []);
+
     return (
         <>
             <div
