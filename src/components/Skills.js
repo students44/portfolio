@@ -48,7 +48,8 @@ const skillsData = [
             { name: "cPanel", icon: SiCpanel, color: "text-orange-500" },
             { name: "Docker", icon: FaDocker, color: "text-blue-400" },
             { name: "VS Code", icon: VscVscode, color: "text-blue-500" },
-            { name: "NPM/Yarn", icon: FaNpm, color: "text-red-500" }
+            { name: "NPM/Yarn", icon: FaNpm, color: "text-red-500" },
+            { name: "Postman", icon: SiPostman, color: "text-orange-500" },
         ]
     }
 ];
@@ -81,7 +82,7 @@ export default function Skills() {
         <section id="skills" className="py-20 relative" ref={containerRef}>
             <div className="container mx-auto px-6">
                 <div className="skills-header text-center mb-16">
-                    <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-accent-primary to-accent-secondary bg-clip-text text-transparent flex justify-center">
+                    <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-linear-to-r from-accent-primary to-accent-secondary bg-clip-text text-transparent flex justify-center">
                         <TextRevealer>Technical Expertise</TextRevealer>
                     </h2>
                     <div className="text-gray-400 max-w-2xl mx-auto text-lg flex justify-center">
@@ -97,10 +98,10 @@ export default function Skills() {
                             key={items}
                             className="skill-card group relative p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 hover:border-accent-primary/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-accent-primary/10"
                         >
-                            <div className="absolute inset-0 bg-gradient-to-br from-accent-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl" />
+                            <div className="absolute inset-0 bg-linear-to-br from-accent-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl" />
 
                             <div className="relative z-10">
-                                <div className="w-14 h-14 mb-6 rounded-xl bg-gradient-to-br from-white/10 to-transparent flex items-center justify-center border border-white/20 group-hover:border-accent-primary/50 group-hover:scale-110 transition-all duration-300">
+                                <div className="w-14 h-14 mb-6 rounded-xl bg-linear-to-br from-white/10 to-transparent flex items-center justify-center border border-white/20 group-hover:border-accent-primary/50 group-hover:scale-110 transition-all duration-300">
                                     <category.icon className="text-accent-primary w-7 h-7" />
                                 </div>
 
