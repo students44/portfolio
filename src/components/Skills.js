@@ -66,7 +66,7 @@ export default function Skills() {
                         trigger: card,
                         start: "top 85%",
                     },
-                    y: 60,
+                    y: 50,
                     opacity: 0,
                     duration: 0.8,
                     delay: i * 0.1,
