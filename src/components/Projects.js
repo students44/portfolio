@@ -57,6 +57,15 @@ const projects = {
             // github: "https://github.com/students44/Spotify-Clone",
             image: "/project_images/alhodhod.PNG",
             color: "from-green-400 to-emerald-600"
+        },
+        {
+            title: "Akash Collection",
+            desc: "this is ecommerce website you can buy any kind of shoes and chapals",
+            tech: ["Html", "Css", "JavaScript", "Bootstrap", "laravel"],
+            link: "https://aakashcollection.com/",
+            // github: "https://github.com/students44/Spotify-Clone",
+            image: "/project_images/akashCollection.PNG",
+            color: "from-green-400 to-emerald-600"
         }
     ],
     wordpress: [
