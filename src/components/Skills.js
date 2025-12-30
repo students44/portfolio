@@ -8,7 +8,7 @@ import {
     FaHtml5, FaCss3Alt, FaBootstrap, FaJs, FaReact, FaDocker, FaGithub, FaNpm
 } from "react-icons/fa";
 import {
-    SiJquery, SiNextdotjs, SiMaterialdesign, SiRedux, SiTailwindcss, SiFramer, SiGreensock, SiCpanel
+    SiJquery, SiNextdotjs, SiMaterialdesign, SiRedux, SiTailwindcss, SiFramer, SiGreensock, SiCpanel, SiPostman
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 import TextRevealer from "./ui/TextRevealer";
