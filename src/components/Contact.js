@@ -44,7 +44,7 @@ export default function Contact() {
                             href="mailto:contact@example.com"
                             className="inline-flex items-center gap-3 text-accent-primary text-xl font-medium hover:text-accent-secondary transition-colors"
                         >
-                            <Mail /> contact@example.com
+                            <Mail /> muneebtech005@gmail.com
                         </a>
                     </div>
 
